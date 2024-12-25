@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/Shulammite-Aso/bazel-demo-app/handlers"
+	"github.com/gator1/bazel-demo-app/handlers"
 	"github.com/gorilla/mux"
 )
 
@@ -19,7 +19,7 @@ func main() {
 	router.HandleFunc("/greet", handlers.Greet).Methods("GET")
 	router.HandleFunc("/greet-many", handlers.GreetMany).Methods("GET")
 
-	address := ":5000"
+	address := ":5050"
 
 	log.Printf("server started at port %v\n", address)
 
